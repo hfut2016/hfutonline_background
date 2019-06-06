@@ -1,0 +1,19 @@
+{
+  "name": "hfutonline_background",
+  "version": "1.0.0",
+  "description": "后台数据统计",
+  "main": "index.js",
+  "scripts": {
+    "start": ".\\node_modules\\.bin\\nodemon .\\server\\server.js"
+  },
+  "repository": "https://github.com/hfut2016/hfutonline_background.git",
+  "author": "lkj_duk <lkj_duk@139.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
