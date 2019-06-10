@@ -3,4 +3,4 @@
 #统计后台数据
 
 #启动
->npm run start
+>node ./server/server.js

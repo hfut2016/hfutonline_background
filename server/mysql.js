@@ -16,7 +16,7 @@ var query = function(sql,fn) {
       console.log('[query] - :' + err);
       return;
     }
-    console.log('[connection connect]  succeed!');
+    console.log('[connection ing]  succeed!');
   });
 
   // 查询文章表

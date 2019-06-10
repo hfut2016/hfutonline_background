@@ -1,6 +1,7 @@
 const http = require('http');
 const {query} = require('./mysql')
 const {statistics} = require('./statistics')
+const {feedback} = require('./feedback')
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -17,9 +18,15 @@ const server = http.createServer((req, res) => {
       res.end(JSON.stringify(num));
       console.log(req.url);
     });
+  } else if(req.url==='/feedback'){
+    let sql = `SELECT * FROM feedback `;
+
+    query(sql, function(result){
+      let data = feedback(result)
+      res.end(JSON.stringify(data))
+    });
   } else {
-    console.log(req.url);
-    res.end('NOT FOUND!!!')
+    res.end(JSON.stringify({'message':'NOT FOUND!!!','success':false}))
   }
 });
 
