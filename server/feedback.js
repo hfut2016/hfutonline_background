@@ -15,7 +15,6 @@ function feedback(data){
       console.log(error);
 
     }
-    console.log(it);
   })
   let result = {
     success:true,
