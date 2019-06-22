@@ -4,3 +4,5 @@
 
 #启动
 >node ./server/server.js
+
+#测试用
